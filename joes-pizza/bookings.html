@@ -42,27 +42,32 @@
           contacted by a staff member who will confirm your booking.
         </p>
         <form action="bookings.php" method="post">
+          <p class="validation-tip">
+            * Indicates a required field.
+          </p>
           <fieldset>
             <legend>Contact Details</legend>
             <div class="field">
-              <label for="name">Name:</label>
-              <input type="text" name="name" id="name" placeholder="e.g Joe Balochio" autofocus>
+              <label for="name">Name*:</label>
+              <input type="text" name="name" id="name" placeholder="e.g Joe Balochio" autofocus required maxlength="65">
             </div>
 
             <div class="field">
-              <label for="phone">Phone:</label>
-              <input type="tel" name="phone" id="phone" placeholder="e.g. 000-000-0000">
+              <label for="phone">Phone*:</label>
+              <input type="tel" name="phone" id="phone" placeholder="e.g. 000-000-0000" pattern="[0-9]{3}[-][0-9]{3}[-][0-9]{4}" required title="Please provide your phone number in this format: 000-000-0000">
             </div>
 
-            <div class="field"> <label for="email">Email:</label> <input
-            type="email" name="email" id="email" placeholder="e.g. joe.at.example.com"> </div>
-            </fieldset>
+            <div class="field">
+              <label for="email">Email*:</label>
+              <input type="email" name="email" id="email" placeholder="e.g. joe.at.example.com" required>
+            </div>
+          </fieldset>
 
           <fieldset>
             <legend>Booking Information</legend>
             <div class="field">
-              <label for="restaurant">Restaurant:</label>
-              <select name="restaurant" id="restaurant">
+              <label for="restaurant">Restaurant*:</label>
+              <select name="restaurant" id="restaurant" required>
                 <option>310 West 38th Street, NY</option>
                 <option>2450 Broadway, NY</option>
                 <option>200 West 44th Street, NY</option>
@@ -70,13 +75,13 @@
             </div>
 
             <div class="field">
-              <label for="bookingTime">Booking Time:</label>
-              <input type="datetime-local" name="bookingTime" id="bookingTime" placeholder="e.g. 2012-09-06 12:14">
+              <label for="bookingTime">Booking Time*:</label>
+              <input type="datetime-local" name="bookingTime" id="bookingTime" placeholder="e.g. 2012-09-06 12:14" required>
             </div>
 
             <div class="field">
-              <label for="guests">Number of Guests:</label>
-              <input type="number" name="guests" id="guests" value="2">
+              <label for="guests">Number of Guests*:</label>
+              <input type="number" name="guests" id="guests" value="2" required min="1" max="12">
             </div>
 
             <div class="field">
@@ -87,7 +92,7 @@
 
             <div class="field">
               <label for="message">Special Requests:</label>
-              <textarea name="message" id="message" cols="50" rows="10" placeholder="Type your message..."></textarea>
+              <textarea name="message" id="message" cols="50" rows="10" placeholder="Type your message..." maxlength="250"></textarea>
             </div>
           </fieldset>
 
