@@ -37,3 +37,38 @@ input[type="text"], input[type="email"] {
 input[type="submit"][class="button"] {
   font-size: 1em;
 }
+
+a:link {
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:active {
+  color: red;
+}
+
+a:focus {
+  outline-color: black;
+  outline-style: dotted;
+  outline-width: 1px;
+}
+
+#content p:first-of-type::first-letter{
+  font-size: 4em;
+  font-weight: bold;
+}
+
+blockquote p::before {
+  content: "\201C";
+}
+
+blockquote p::after{
+  content: "\201D";
+}
