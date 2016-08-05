@@ -1,0 +1,29 @@
+html
+--------------
+<body>
+<div id="sample_id" class="sample_class">
+<p>
+sample text
+</p>
+<p class="sample_class">
+sample text 2
+</p>
+</div>
+<div>
+<p id="sample_id" class="sample_class">
+sample text 3
+</p>
+</div>
+</body>
+
+css
+------------
+div.sample_class {
+  color: red;
+}
+
+css
+-----------
+div .sample_class {
+  color: red;
+}
