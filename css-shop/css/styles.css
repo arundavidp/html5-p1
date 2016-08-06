@@ -1,8 +1,14 @@
 @import url("reset.css");
 
 body {
-  background-color: gray;
+  background-color: #f5f5f5;
   background-image: url("../images/bg-body.jpg");
+  font-size: 62.5%;
+}
+
+#header, #main, #footer {
+  font-size: 1.6em;
+  /* inherited value (10px) x 1.6e, = 16px */
 }
 
 h1, h2, h3, h4 {
@@ -11,6 +17,7 @@ h1, h2, h3, h4 {
 
 #main {
   background-color: white;
+  background-color: rbga(255, 255, 255, 0.6);
 }
 
 .button {
@@ -36,6 +43,10 @@ input[type="text"], input[type="email"] {
 
 input[type="submit"][class="button"] {
   font-size: 1em;
+}
+
+input[type="submit"][class="button"]:hover {
+  background-color: #d4326d;
 }
 
 a:link {
@@ -71,4 +82,22 @@ blockquote p::before {
 
 blockquote p::after{
   content: "\201D";
+}
+
+#newsletter {
+  color: white;
+  background-color: #00ACDF;
+}
+
+#footer {
+  background-color: #ccc;
+  background-image: url("../images/bg-footer.jpg");
+}
+
+.showcase .button:hover {
+  background-color: #00ACDF;
+}
+
+#content {
+  width: 65%;
 }
