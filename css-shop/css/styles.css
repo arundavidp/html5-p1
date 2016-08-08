@@ -52,6 +52,7 @@ input[type="text"], input[type="email"] {
 
 input[type="submit"][class="button"] {
   font-size: 1em;
+  cursor: pointer;
 }
 
 input[type="submit"][class="button"]:hover {
@@ -75,9 +76,7 @@ a:active {
 }
 
 a:focus {
-  outline-color: black;
-  outline-style: dotted;
-  outline-width: 1px;
+  outline: black dotted 1px;
 }
 
 #content p:first-of-type::first-letter{
@@ -93,6 +92,10 @@ blockquote p::after{
   content: "\201D";
 }
 
+blockquote cite::before {
+  content: "- ";
+}
+
 #newsletter {
   color: white;
   border-radius: 8px;
@@ -102,8 +105,7 @@ blockquote p::after{
 }
 
 #footer {
-  background-color: #ccc;
-  background-image: url("../images/bg-footer.jpg");
+  background: url("../images/bg-footer.jpg") #ccc;
   border-top: #999 dotted 4px;
   border-image: url("../images/bdr-footer.png") 4 repeat;
 }
@@ -128,4 +130,20 @@ blockquote p::after{
 
 .showcase {
   box-shadow: 0 -3px 8px 0 #ccc;
+  background: #f5f5f5;
+}
+
+.small-logo a {
+  background: url("../images/logo-small.png") no-repeat center white;
+  display: block;
+  min-height: 11px;
+  width: 162px;
+  padding: 5px;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+
+#header nav > ul > li {
+  background: white;
 }
