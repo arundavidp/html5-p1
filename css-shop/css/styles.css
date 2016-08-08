@@ -98,6 +98,9 @@ blockquote p::after{
   background-color: #00ACDF;
   border-radius: 8px;
   border: rgba(0, 0, 0, 0.1) solid 5px;
+  background-image: url("../images/icon-newsletter.png"), url("../images/bg-newsletter.png");
+  background-repeat: no-repeat, repeat;
+  background-position: 91% 2%, 0;
 }
 
 #footer {
@@ -105,6 +108,11 @@ blockquote p::after{
   background-image: url("../images/bg-footer.jpg");
   border-top: #999 dotted 4px;
   border-image: url("../images/bdr-footer.png") 4 repeat;
+}
+
+.showcase .button {
+  padding: 20px;
+  background-image: linear-gradient(to bottom, #FB3876 0%, #d4326d 100%);
 }
 
 .showcase .button:hover {
