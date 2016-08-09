@@ -147,3 +147,7 @@ blockquote cite::before {
 #header nav > ul > li {
   background: white;
 }
+
+img {
+  max-width: 100%;
+}
