@@ -4,7 +4,7 @@ body {
   background-color: #f5f5f5;
   background-image: url("../images/bg-body.jpg");
   font-size: 62.5%;
-  margin: 0 auto;
+  margin: 2.5em auto 0 auto;
   max-width: 960px;
 }
 
@@ -24,6 +24,7 @@ h1, h2, h3, h4 {
   border-style: solid;
   border-width: 1px;
   box-shadow: 0 3px 8px 0 #ccc;
+  padding: 2.5em;
 }
 
 .button {
@@ -31,6 +32,7 @@ h1, h2, h3, h4 {
   color: white;
   border-radius: 8px;
   border: 2px solid white;
+  padding: 1em;
 }
 
 blockquote p {
@@ -39,6 +41,7 @@ blockquote p {
 
 aside > h3 {
   font-weight: bold;
+  margin: 0 0 1.6em 0;
 }
 
 p + .offer {
@@ -48,11 +51,16 @@ p + .offer {
 input[type="text"], input[type="email"] {
   border: none;
   box-shadow: -3px 3px 2px 0 #ccc inset;
+  padding: 0.4em 1em;
+  width: 100%
+  box-sizing: border-box;
 }
 
 input[type="submit"][class="button"] {
   font-size: 1em;
   cursor: pointer;
+  margin: 2em auto 1em;
+  padding: 0.8em;
 }
 
 input[type="submit"][class="button"]:hover {
@@ -102,16 +110,20 @@ blockquote cite::before {
   border: rgba(0, 0, 0, 0.1) solid 5px;
   background: url("../images/icon-newsletter.png") no-repeat 91% 2%, url("../images/bg-newsletter.png") repeat 0 #00ACDF;
   padding: 6%;
+  width: 88%;
+  margin-left: -4px;
 }
 
 #footer {
   background: url("../images/bg-footer.jpg") #ccc;
   border-top: #999 dotted 4px;
   border-image: url("../images/bdr-footer.png") 4 repeat;
+  margin-top: 2.5em;
+  padding: 1.4em 0;
 }
 
 .showcase .button {
-  padding: 20px;
+  /* padding: 20px; */
   background-image: linear-gradient(to bottom, #FB3876 0%, #d4326d 100%);
 }
 
@@ -121,6 +133,7 @@ blockquote cite::before {
 
 #content {
   width: 65%;
+  margin: 0 auto;
 }
 
 #header nav > ul {
@@ -150,4 +163,61 @@ blockquote cite::before {
 
 img {
   max-width: 100%;
+}
+
+#header {
+  margin: 0 0 2em 0;
+}
+
+#header .logo {
+  margin: 2.4em 0;
+}
+
+#header nav {
+  margin-top: 2em;
+}
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+aside {
+  margin: 0 0 2em 0;
+}
+
+#content h1, #content h2, #content h3, #content h4 {
+  margin: 0 0 1.6em 0;
+}
+
+#content p, #content ul {
+  margin: 0 0 1.25em 0;
+}
+
+blockquote cite {
+  margin: 0.625em 0 0 0;
+}
+
+#newsletter h3 {
+  margin: 0 0 1em 0;
+}
+
+#newsletter label {
+  margin: 1.5em 0 0 0;
+}
+
+.aside {
+  margin: 0 0 2em 0;
+}
+
+.post h3 {
+  margin: 0 0 1em 0;
+}
+
+.post img {
+  margin: 0 0.5em 0 0;
+}
+
+.testimonials {
+  padding: 1em 0 0 0;
 }
