@@ -8,6 +8,19 @@ body {
   max-width: 960px;
 }
 
+.group::before, .group::after {
+  content: "";
+  display: table;
+}
+
+.group::after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+
 #header, #main, #footer {
   font-size: 1.6em;
   /* inherited value (10px) x 1.6e, = 16px */
@@ -134,6 +147,7 @@ blockquote cite::before {
 #content {
   width: 65%;
   margin: 0 auto;
+  float: left;
 }
 
 #header nav > ul {
@@ -171,10 +185,13 @@ img {
 
 #header .logo {
   margin: 2.4em 0;
+  float: left;
+  width: 240px;
 }
 
 #header nav {
   margin-top: 2em;
+  float: right;
 }
 
 .container {
@@ -196,6 +213,7 @@ aside {
 
 blockquote cite {
   margin: 0.625em 0 0 0;
+  float: right;
 }
 
 #newsletter h3 {
@@ -220,4 +238,26 @@ blockquote cite {
 
 .testimonials {
   padding: 1em 0 0 0;
+}
+
+.product {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+.benefits {
+  clear: left;
+}
+
+.sidebar {
+  float: right;
+  width: 25%;
+}
+
+#footer li:nth-child(1) {
+  float: left;
+}
+
+#footer li:nth-child(2) {
+  float: right;
 }
