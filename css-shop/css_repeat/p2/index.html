@@ -28,10 +28,10 @@
     <!-- Main Picture and button -->
     <div id="main-picture">
       <figure>
-        <img src="../../images/banner-trainers.jpg" alt="banner for css special trainers shoes and socks">
+        <img src="../../images/banner-trainers.jpg" alt="some of our cool trainers">
       </figure>
       <div id="info-button">
-        More Information
+        <a class="button purchase"href="#" title="Purchase product">More Information</a>
       </div>
     </div>
     <!-- Main content -->
@@ -41,7 +41,7 @@
         <section id="content-1">
           <h1>Page Title</h1>
           <p>Nulla facilisi. Ut porttitor sollicitudin nisi, tempus pulvinar nisl volutpat aliquet. Phasellus posuere auctor accumsan. Ut in odio eget dui pulvinar sollicitudin. Sed vitae tortor nibh. Aenean nec sapien quam, sit amet dapibus lorem. Phasellus ac pharetra tellus. Curabitur pretium eros sit amet nisl pretium mollis.</p>
-          <p>All products now have 15% 25% off!</p>
+          <p class="offer">All products now have 15% 25% off!</p>
           <p>Nulla facilisi. Ut porttitor sollicitudin nisi, tempus pulvinar nisl volutpat aliquet.</p>
         <figure>
           <img src="../../images/socks-horses.png" alt="horse socks image">
@@ -66,7 +66,7 @@
             <li>
               <blockquote>
                 <p>Integer aliquet, lacus in ultricies venenatis, eros urna faucibus tellus, sed sollicitudin.</p>
-                <cite>Ian Lunn</cite>
+                <cite><a href="#" title="Visit Ian Lunn's website">Ian Lunn</a></cite>
               </blockquote>
             </li>
           </ul>
@@ -77,8 +77,18 @@
           <p>Nulla facilisi. Ut porttitor sollicitudin nisi, tempus pulvinar nisl volutpat aliquet. Phasellus posuere auctor accumsan. Ut in odio eget dui pulvinar sollicitudin. Sed vitae tortor nibh. Aenean nec sapien quam, sit amet dapibus lorem. Phasellus ac pharetra tellus. Curabitur pretium eros sit amet nisl pretium mollis.</p>
         </aside>
         <aside id="signup-form">
-          <h3>Newsletter</h3>
-          <p>Sign up for news and special offers delivered to your inbox monthly.</p>
+          <form id="newsletter" action="#">
+            <h3>Newsletter</h3>
+            <p>Sign up for news and special offers delivered to your inbox monthly.</p>
+            <label>Name: </label>
+            <input type="text" placeholder="Your Name" />
+            
+            <label> Email: </label>
+            <input type="email" placeholder="Your Email Address" />
+            
+            <input class="button" id="submit-newsletter" type="submit" value="Sign Up" />
+          </form>
+          
         </aside>
       </div>
     </div>

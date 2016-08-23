@@ -1,10 +1,80 @@
 @import url("reset.css");
 
 body {
-  margin: 0 auto;
-  max-width: 960px;
+  background-color: gray;
+  background-image: url("../../images/bg-body.jpg");
 }
 
-#container {
-  width: 65%;
+h1, h2, h3, h4 {
+  font-weight: bold;
 }
+
+#main-content {
+  background-color: white;
+}
+
+.button {
+  background-color: hotpink;
+  color: white;
+}
+
+/* Descendant combinator */
+blockquote p {
+  font-style: italic;
+}
+
+/* child combinator */
+aside > h3 {
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* adjacent sibling combinator */
+p + .offer {
+  color: red;
+}
+
+/* Attribute selector */
+input[type="text"], input[type="email"] {
+  border: none;
+}
+
+input[type="submit"][class="button"] {
+  font-size: 1em;
+}
+
+/* Dynamic Pseudo classes */
+a:link {
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:active {
+  color: red;
+}
+
+/* For keyboard based browsing using tabs */
+a:focus {
+  outline-color: black;
+  outline-style: dotted;
+  outline-width: 1px;
+}
+
+/* Pseudo Elements selecting first letter */
+#sub-content p:first-of-type::first-letter {
+  font-size: 4em;
+  font-weight: bold;
+}
+/*
+#content-2 li:first-of-type::first-letter {
+  font-size: 4em;
+  font-weight: bold;
+}
+*/
