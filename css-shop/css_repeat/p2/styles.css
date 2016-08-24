@@ -1,8 +1,15 @@
 @import url("reset.css");
 
 body {
-  background-color: gray;
+  background-color: #f5f5f5;
   background-image: url("../../images/bg-body.jpg");
+  font-size: 62.5%;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+header, #main-content, footer {
+  font-size: 1.6em;
 }
 
 h1, h2, h3, h4 {
@@ -11,6 +18,7 @@ h1, h2, h3, h4 {
 
 #main-content {
   background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .button {
@@ -41,6 +49,10 @@ input[type="text"], input[type="email"] {
 
 input[type="submit"][class="button"] {
   font-size: 1em;
+}
+
+input[type="submit"][class="button"]:hover {
+  background-color: #d4326d;
 }
 
 /* Dynamic Pseudo classes */
@@ -78,3 +90,29 @@ a:focus {
   font-weight: bold;
 }
 */
+
+blockquote p:before {
+  content: "\201C";
+}
+
+blockquote p:after {
+  content: "\201D";
+}
+
+#newsletter {
+  color: white;
+  background-color: #00ACDF;
+}
+
+footer {
+  color: #ccc;
+  background-image: url("../../images/bg-footer.jpg");
+}
+
+#info-button .button:hover {
+  background-color: #00ACDF;
+}
+
+#sub-content {
+  width: 65%;
+}
