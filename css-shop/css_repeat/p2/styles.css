@@ -20,11 +20,14 @@ h1, h2, h3, h4 {
   background-color: white;
   background-color: rgba(255, 255, 255, 0.6);
   border: #ccc solid 1px;
+  box-shadow: 0 3px 8px 0 #ccc;
 }
 
 .button {
   background-color: hotpink;
   color: white;
+  border-radius: 8px;
+  border: 2px solid white;
 }
 
 /* Descendant combinator */
@@ -46,10 +49,12 @@ p + .offer {
 /* Attribute selector */
 input[type="text"], input[type="email"] {
   border: none;
+  box-shadow: -3px 3px 2px 0 #ccc inset;
 }
 
 input[type="submit"][class="button"] {
   font-size: 1em;
+  cursor: pointer;
 }
 
 input[type="submit"][class="button"]:hover {
@@ -75,9 +80,7 @@ a:active {
 
 /* For keyboard based browsing using tabs */
 a:focus {
-  outline-color: black;
-  outline-style: dotted;
-  outline-width: 1px;
+  outline: black dotted 1px;
 }
 
 /* Pseudo Elements selecting first letter */
@@ -100,10 +103,24 @@ blockquote p:after {
   content: "\201D";
 }
 
+blockquote cite:before {
+  content: "-";
+}
+
 #newsletter {
   color: white;
-  background-color: #00ACDF;
+  /*
+  background-color: #00ACDF; */
   border-radius: 8px;
+  border: rgba(0 , 0, 0, 0.1) solid 5px;
+  /*
+  background-image: url("../../images/icon-newsletter.png"), url("../../images/bg-newsletter.png");
+  background-repeat: no-repeat, repeat;;
+  background-position: 91% 0%, 0; /* position relative to the start of border */ /*
+  background-clip: border-box, border-box;
+  background-origin: padding-box; /* actual origin of background image. with padding box, the background image can ony start from the start of padding */
+  background: url("../../images/icon-newsletter.png") no-repeat 91% 2%, url("../../images/bg-newsletter.png") no-repeat 0 #00ACDF;
+  padding: 6%;
 }
 
 footer {
@@ -113,10 +130,40 @@ footer {
   border-image: url("../../images/bdr-footer.png") 4 repeat;
 }
 
+#info-button .button {
+  padding: 20px;
+  background-image: linear-gradient(to bottom, #FB3876 0%, #d4326d 100%);
+}
+
 #info-button .button:hover {
   background-color: #00ACDF;
 }
 
 #sub-content {
   width: 65%;
+}
+
+header nav > ul {
+  border-radius: 20px;
+  border: #ccc solid 1px;
+}
+
+#main-picture {
+  box-shadow: 0 -3px 8px 0 #ccc;
+  background: #f5f5f5;
+}
+
+.small-logo a {
+  background: white url("../../images/logo-small.png") no-repeat center;
+  display: block;
+  min-height: 11px;
+  width: 162px;
+  padding: 5%;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+
+header nav > ul > li {
+  background-color: white;
 }
