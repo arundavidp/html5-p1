@@ -167,3 +167,7 @@ header nav > ul {
 header nav > ul > li {
   background-color: white;
 }
+
+img {
+  max-width: 100%;
+}
