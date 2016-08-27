@@ -4,7 +4,7 @@ body {
   background-color: #f5f5f5;
   background-image: url("../../images/bg-body.jpg");
   font-size: 62.5%;
-  margin: 0 auto;
+  margin: 2.5em auto 0 auto;
   max-width: 960px;
 }
 
@@ -39,6 +39,7 @@ blockquote p {
 aside > h3 {
   font-style: italic;
   font-weight: bold;
+  margin: 0 0 1.6em 0;
 }
 
 /* adjacent sibling combinator */
@@ -55,6 +56,7 @@ input[type="text"], input[type="email"] {
 input[type="submit"][class="button"] {
   font-size: 1em;
   cursor: pointer;
+  margin: 2em 0 1em;
 }
 
 input[type="submit"][class="button"]:hover {
@@ -128,6 +130,8 @@ footer {
   background-image: url("../../images/bg-footer.jpg");
   border-top: #999 dotted 4px;
   border-image: url("../../images/bdr-footer.png") 4 repeat;
+  margin-top: 2.5em;
+  padding: 1.4em 0;
 }
 
 #info-button .button {
@@ -141,6 +145,7 @@ footer {
 
 #sub-content {
   width: 65%;
+  margin: 0 auto;
 }
 
 header nav > ul {
@@ -170,4 +175,53 @@ header nav > ul > li {
 
 img {
   max-width: 100%;
+}
+
+header {
+  margin: 0 0 2.5em 0;
+}
+
+header #logo-main {
+  margin: 2.4em 0;
+}
+
+header nav {
+  margin-top: 2em;
+}
+
+.container-small {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+aside {
+  margin: 0 0 2em 0;
+}
+
+#sub-content h1, #sub-content h2, #sub-content h3, #sub-content h4 {
+  margin: 0 0 1.6em 0;
+}
+
+#sub-content p, #sub-content ul {
+  margin: 0 0 1.25em 0;
+}
+
+blockquote cite {
+  margin: 0.625em 0 0 0;
+}
+
+#newsletter h3 {
+  margin: 0 0 1em 0;
+}
+
+#newsletter label {
+  margin: 1.5em 0 0 0;
+}
+
+#content-4 h3 {
+  margin: 0 0 1em 0;
+}
+
+#content-4 img {
+  margin: 0 0.5em 0 0;
 }
