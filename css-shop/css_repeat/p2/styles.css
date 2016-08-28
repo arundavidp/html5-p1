@@ -8,6 +8,19 @@ body {
   max-width: 960px;
 }
 
+.group::before, .group::after {
+  content: "";
+  display: table;
+}
+
+.group::after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+
 header, #main-content, footer {
   font-size: 1.6em;
 }
@@ -21,6 +34,7 @@ h1, h2, h3, h4 {
   background-color: rgba(255, 255, 255, 0.6);
   border: #ccc solid 1px;
   box-shadow: 0 3px 8px 0 #ccc;
+  padding: 2.5em;
 }
 
 .button {
@@ -28,6 +42,7 @@ h1, h2, h3, h4 {
   color: white;
   border-radius: 8px;
   border: 2px solid white;
+  padding: 1em;
 }
 
 /* Descendant combinator */
@@ -51,12 +66,16 @@ p + .offer {
 input[type="text"], input[type="email"] {
   border: none;
   box-shadow: -3px 3px 2px 0 #ccc inset;
+  padding: 0.4em 1em;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 input[type="submit"][class="button"] {
   font-size: 1em;
   cursor: pointer;
   margin: 2em 0 1em;
+  padding: 0.8em;
 }
 
 input[type="submit"][class="button"]:hover {
@@ -123,6 +142,8 @@ blockquote cite:before {
   background-origin: padding-box; /* actual origin of background image. with padding box, the background image can ony start from the start of padding */
   background: url("../../images/icon-newsletter.png") no-repeat 91% 2%, url("../../images/bg-newsletter.png") no-repeat 0 #00ACDF;
   padding: 6%;
+  width: 88%;
+  margin-left: -4px;
 }
 
 footer {
@@ -135,7 +156,6 @@ footer {
 }
 
 #info-button .button {
-  padding: 20px;
   background-image: linear-gradient(to bottom, #FB3876 0%, #d4326d 100%);
 }
 
@@ -146,6 +166,7 @@ footer {
 #sub-content {
   width: 65%;
   margin: 0 auto;
+  float: left;
 }
 
 header nav > ul {
@@ -183,10 +204,13 @@ header {
 
 header #logo-main {
   margin: 2.4em 0;
+  float: left;
+  width: 240px;
 }
 
 header nav {
   margin-top: 2em;
+  float: right;
 }
 
 .container-small {
@@ -208,6 +232,7 @@ aside {
 
 blockquote cite {
   margin: 0.625em 0 0 0;
+  float: right;
 }
 
 #newsletter h3 {
@@ -224,4 +249,39 @@ blockquote cite {
 
 #content-4 img {
   margin: 0 0.5em 0 0;
+}
+
+.testimonials {
+  padding: 1em 0 0 0;
+}
+
+.product {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+#content-2 {
+  clear: left;
+}
+
+#side-content {
+  width: 25%;
+  float: right;
+}
+
+footer li:nth-child(1) {
+  float: left;
+}
+
+footer li:nth-child(2) {
+  float: right;
+}
+
+footer::before, footer::after {
+  content: "";
+  display: table;
+}
+
+footer::after {
+  clear: both;
 }
