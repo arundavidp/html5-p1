@@ -150,6 +150,7 @@ blockquote cite::before {
   background-image: linear-gradient(to bottom, #FB3876 0%, #d4326d 100%);
   position: absolute;
   top: 0;
+  display: block;
 }
 
 .showcase .button:hover {
