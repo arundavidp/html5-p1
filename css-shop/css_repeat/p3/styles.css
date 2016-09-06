@@ -1,0 +1,141 @@
+@import url("reset.css");
+
+body {
+  background-color: #f5f5f5;
+  background-image: url("../../images/bg-body.jpg");
+  font-size: 62.5%;
+  margin: 2.5em auto 0 auto;
+  max-width: 960px;
+}
+
+.button {
+  background-color: hotpink;
+  color: white;
+  border: 1px solid white;
+}
+
+p + .offer {
+  color: red;
+}
+
+header, #content, footer {
+  font-size: 1.6em;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+
+#main h1, #main h2, #main h3, #main h4 {
+  margin: 0 0 1.6em 0;
+}
+
+aside {
+  margin: 0 0 2em 0;
+}
+
+aside > h3 {
+  font-style: italic;
+  font-weight: bold;
+  margin: 0 0 1.6em 0;
+}
+
+#newsletter h3 {
+  margin: 0 0 1em 0;
+}
+
+#main p, #main ul {
+  margin: 0 0 1.25em 0;
+}
+
+#content {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid #ccc;
+  padding: 2.5em;
+}
+
+#main {
+  width: 65%;
+  margin: 0 auto;
+  float: left;
+}
+
+#sidebar {
+  /*width: 25%;*/
+  /*float: right;*/
+}
+
+blockquote p {
+  font-style: italic;
+}
+
+blockquote p::before {
+  content: "\201C";
+}
+
+blockquote p::after {
+  content: "\201D";
+}
+
+blockquote cite::before {
+  content: "-";
+}
+
+input[type="text"], input[type="email"] {
+  border: none;
+}
+
+input[type="submit"][class="button"] {
+  font-size: 1em;
+}
+
+a:link {
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:active {
+  color: red;
+}
+
+a:focus {
+  outline-color: black;
+  outline-style: dotted;
+  outline-width: 1px;
+}
+
+#main p:first-of-type::first-letter {
+  font-weight: bold;
+  font-size: 4em;
+}
+
+#newsletter {
+  color: white;
+  background-color: #00ACDF;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #ccc;
+  background-image: url("../../images/bg-footer.jpg");
+  border-top: #999 dotted 4px;
+  border-image-source: url("../../images/bdr-footer.png");
+  border-image-slice: 4;
+  border-image-repeat: repeat;
+}
+
+.showcase .button:hover {
+  background-color: #00ACDF;
+}
+
+input[type="submit"][class="button"]:hover {
+  background-color: #d4326d;
+}
