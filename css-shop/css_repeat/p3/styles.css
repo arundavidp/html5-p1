@@ -11,7 +11,8 @@ body {
 .button {
   background-color: hotpink;
   color: white;
-  border: 1px solid white;
+  border: 2px solid white;
+  border-radius: 8px;
 }
 
 p + .offer {
@@ -53,6 +54,7 @@ aside > h3 {
   background-color: rgba(255, 255, 255, 0.6);
   border: 1px solid #ccc;
   padding: 2.5em;
+  box-shadow: 0 3px 8px 0 #ccc;
 }
 
 #main {
@@ -84,10 +86,12 @@ blockquote cite::before {
 
 input[type="text"], input[type="email"] {
   border: none;
+  box-shadow: -3px 3px 2px 0 #ccc inset;
 }
 
 input[type="submit"][class="button"] {
   font-size: 1em;
+  cursor: pointer;
 }
 
 a:link {
@@ -121,6 +125,11 @@ a:focus {
   color: white;
   background-color: #00ACDF;
   border-radius: 8px;
+  border: rgba(0, 0, 0, 0.1) solid 5px;
+  background-image: url("../../images/icon-newsletter.png"), url("../../images/bg-newsletter.png");
+  background-repeat: no-repeat, repeat;
+  background-position: 91% 2%, 0;
+  padding: 6%;
 }
 
 footer {
@@ -132,10 +141,40 @@ footer {
   border-image-repeat: repeat;
 }
 
+.showcase .button {
+  padding: 20px;
+  background-image: linear-gradient(to bottom, #FB3876 0%, #d4326d 100%);
+}
+
 .showcase .button:hover {
   background-color: #00ACDF;
 }
 
 input[type="submit"][class="button"]:hover {
   background-color: #d4326d;
+}
+
+header nav > ul {
+  border-radius: 20px;
+  border: #ccc solid 1px;
+}
+
+.showcase {
+  box-shadow: 0 -3px 8px 0 #ccc;
+  background: #f5f5f5;
+}
+
+.small-logo a {
+  background: white url("../../images/logo-small.png") no-repeat center;
+  display: block;
+  min-height: 11px;
+  width: 162px;
+  padding: 5px;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+
+header nav > ul > li {
+  background: white;
 }
