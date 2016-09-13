@@ -8,11 +8,16 @@ body {
   max-width: 960px;
 }
 
+img {
+  max-width: 100%;
+}
+
 .button {
   background-color: hotpink;
   color: white;
   border: 2px solid white;
   border-radius: 8px;
+  padding: 1em;
 }
 
 p + .offer {
@@ -64,8 +69,8 @@ aside > h3 {
 }
 
 #sidebar {
-  /*width: 25%;*/
-  /*float: right;*/
+  float: right;
+  width: 25%;
 }
 
 blockquote p {
@@ -74,24 +79,36 @@ blockquote p {
 
 blockquote p::before {
   content: "\201C";
+  position: absolute;
+  left: -20px;
+  top: -10px;
 }
 
 blockquote p::after {
   content: "\201D";
+  position: absolute;
+  right: 0;
+  bottom: -20px;
 }
 
 blockquote cite::before {
-  content: "-";
+  content: "- ";
 }
 
 input[type="text"], input[type="email"] {
   border: none;
   box-shadow: -3px 3px 2px 0 #ccc inset;
+  padding: 0.4em 1em;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 input[type="submit"][class="button"] {
   font-size: 1em;
   cursor: pointer;
+  margin: 2em auto 1em;
+  padding: 0.8em;
+  display: block;
 }
 
 a:link {
@@ -130,6 +147,8 @@ a:focus {
   background-repeat: no-repeat, repeat;
   background-position: 91% 2%, 0;
   padding: 6%;
+  width: 88%;
+  margin-left: -4px;
 }
 
 footer {
@@ -139,11 +158,17 @@ footer {
   border-image-source: url("../../images/bdr-footer.png");
   border-image-slice: 4;
   border-image-repeat: repeat;
+  margin-top: 2.5em;
+  padding: 1.4em 0;
+  position: absolute;
+  left: 0;
+  width: 100%;
 }
 
 .showcase .button {
-  padding: 20px;
   background-image: linear-gradient(to bottom, #FB3876 0%, #d4326d 100%);
+  position: absolute;
+  top: 0;
 }
 
 .showcase .button:hover {
@@ -162,6 +187,7 @@ header nav > ul {
 .showcase {
   box-shadow: 0 -3px 8px 0 #ccc;
   background: #f5f5f5;
+  position: relative;
 }
 
 .small-logo a {
@@ -177,4 +203,88 @@ header nav > ul {
 
 header nav > ul > li {
   background: white;
+  display: inline-block;
+}
+
+header {
+  margin: 0 0 2em 0;
+}
+
+header #logo {
+  margin: 2.4em 0;
+  float: left;
+  width: 240px;
+}
+
+header nav {
+  margin-top: 2em;
+  float: right;
+}
+
+footer > ul {
+  margin: 0 auto;
+  max-width: 920px;
+}
+
+blockquote cite {
+  margin: 0.625em 0 0 0;
+  float: right;
+}
+
+#newsletter label {
+  margin: 1.5em 0 0 0;
+  display: block;
+}
+
+.post h3 {
+  margin: 0 0 1em 0;
+}
+
+.post img {
+  margin: 0 0.5em 0 0;
+}
+
+.testimonials {
+  padding: 1em 0 0 0;
+}
+
+#section1 p + img {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+#section2 {
+  clear: left;
+}
+
+/* clear fix */
+.group::before, .group::after {
+  content: "";
+  display: table;
+}
+
+.group::after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+
+footer li:nth-child(1) {
+  float: left;
+}
+
+footer li:nth-child(2) {
+  float: right;
+}
+
+.banner-ad {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+blockquote {
+  position: relative;
 }
