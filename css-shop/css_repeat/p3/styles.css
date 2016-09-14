@@ -169,6 +169,7 @@ footer {
   background-image: linear-gradient(to bottom, #FB3876 0%, #d4326d 100%);
   position: absolute;
   top: 0;
+  z-index: 5;
 }
 
 .showcase .button:hover {
@@ -204,6 +205,61 @@ header nav > ul {
 header nav > ul > li {
   background: white;
   display: inline-block;
+}
+
+header nav > ul > li:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+header nav > ul > li:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+header nav ul > li:hover {
+  background: #f5f5f5;
+}
+
+header nav ul ul > li:hover {
+  background: white;
+}
+
+header nav ul li a {
+  color: black;
+  display: block;
+  padding: 10px 20px;
+}
+
+header nav ul ul ul {
+  border: 1px solid #ccc;
+  border-right: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 0;
+  left: -100%;
+  top: -1px;
+}
+
+header nav li:hover > ul {
+  visibility: visible;
+}
+
+header nav ul ul {
+  background: #f5f5f5;
+  border: 1px solid #ccc;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top: none;
+  padding: 20px 0;
+  position: absolute;
+  min-width: 140px;
+  z-index: 10;
+  visibility: hidden;
+}
+
+header nav ul ul li {
+  position: relative;
 }
 
 header {
@@ -283,6 +339,7 @@ footer li:nth-child(2) {
   position: fixed;
   right: 0;
   bottom: 0;
+  z-index: 9;
 }
 
 blockquote {
