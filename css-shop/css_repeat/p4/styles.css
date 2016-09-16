@@ -4,7 +4,7 @@ body {
   background-color: #f5f5f5;
   background-image: url("../../images/bg-body.jpg");
   font-size: 62.5%;
-  margin: 0 auto;
+  margin: 2.5em auto 0 auto;
   max-width: 960px;
 }
 
@@ -27,6 +27,7 @@ h1, h2, h3, h4 {
   border-style: solid;
   border-width: 1px;
   box-shadow: 0 3px 8px 0 #ccc;
+  padding: 2.5em;
 }
 
 .button {
@@ -34,6 +35,7 @@ h1, h2, h3, h4 {
   color: white;
   border-radius: 8px;
   border: 2px white solid;
+  padding: 1em;
 }
 
 blockquote p {
@@ -41,11 +43,17 @@ blockquote p {
 }
 
 blockquote p::before {
-  content: "\201C"
+  content: "\201C";
+  position: absolute;
+  left: -20px;
+  top: -10px;
 }
 
 blockquote p::after {
-  content: "\201D"
+  content: "\201D";
+  position: absolute;
+  right: 0;
+  bottom: -20px;
 }
 
 blockquote cite::before {
@@ -54,6 +62,7 @@ blockquote cite::before {
 
 aside > h3 {
   font-weight: bold;
+  margin: 0 0 1.6em 0;
 }
 
 p + .offer {
@@ -63,11 +72,17 @@ p + .offer {
 input[type="text"], input[type="email"] {
   border: none;
   box-shadow: -3px 3px 2px 0 #ccc inset;
+  padding: .4em 1em;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 input[type="submit"][class="button"] {
   font-size: 1em;
   cursor: pointer;
+  margin: 2em auto 1em;
+  padding: 0.8em;
+  display: block;
 }
 
 input[type="submit"][class="button"]:hover {
@@ -110,6 +125,8 @@ a:focus {
   background-repeat: no-repeat, repeat;
   background-position: 91% 2%, 0;
   padding: 6%;
+  width: 88%;
+  margin-left: -4px;
 }
 
 footer {
@@ -117,11 +134,25 @@ footer {
   background-image: url("../../images/bg-footer.jpg");
   border-top: #999 dotted 4px;
   border-image: url("../../images/bdr-footer.png") 4 repeat;
+  margin-top: 2.5em;
+  padding: 1.4em 0;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+footer li:nth-child(1) {
+  float: left;
+}
+
+footer li:nth-child(2) {
+  float: right;
 }
 
 .showcase .button {
-  padding: 20px;
   background-image: linear-gradient(to bottom, #FB3876 0%, #d4326d 100%);
+  position: absolute;
+  top: 0;
 }
 
 .showcase .button:hover {
@@ -130,6 +161,8 @@ footer {
 
 #content {
   width: 65%;
+  margin: 0 auto;
+  float: left;
 }
 
 header nav > ul {
@@ -140,6 +173,7 @@ header nav > ul {
 .showcase {
   box-shadow: 0 -3px 8px 0 #ccc;
   background: #f5f5f5;
+  position: relative;
 }
 
 .small-logo a {
@@ -155,4 +189,159 @@ header nav > ul {
 
 header nav > ul > li {
   background: white;
+  display: inline-block;
+}
+
+header nav > ul > li:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+header nav > ul > li:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+header nav ul > li:hover {
+  background: #f5f5f5;
+}
+
+header nav ul ul > li:hover {
+  background: white;
+}
+
+header nav ul li a {
+  color: black;
+  display: block;
+  padding: 10px 20px;
+}
+
+header nav ul ul {
+  background: #f5f5f5;
+  border: 1px solid #ccc;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top: none;
+  padding: 20px 0;
+  position: absolute;
+  min-width: 140px;
+  z-index: 10;
+  visibility: hidden;
+}
+
+header nav ul ul li {
+  position: relative;
+}
+
+header nav ul ul ul {
+  border: solid 1px #ccc;
+  border-right: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 0;
+  left: -100%;
+  top: -1px;
+}
+
+header nav li:hover > ul {
+  visibility: visible;
+}
+
+header {
+  margin: 0 0 2em 0;
+}
+
+header #logo {
+  margin: 2.4em 0;
+  float: left;
+  width: 240px;
+}
+
+header nav {
+  margin-top: 2em;
+  float: right;
+}
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+aside {
+  margin: 0 0 2em 0;
+}
+
+#content h1, #content h2, #content h3, #content h4 {
+  margin: 0 0 1.6em 0;
+}
+
+#content p, #content ul {
+  margin: 0 0 1.25em 0;
+}
+
+blockquote cite {
+  margin: 0.625em 0 0 0;
+  float: right;
+}
+
+#newsletter h3 {
+  margin: 0 0 1em 0;
+}
+
+#newsletter label {
+  margin: 1.5em 0 0 0;
+}
+
+.post h3 {
+  margin: 0 0 1em 0;
+}
+
+.post img {
+  margin: 0 0.5em 0 0;
+}
+
+.testimonials {
+  padding: 1em 0 0 0;
+}
+
+.product {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+section.benefits {
+  clear: left;
+}
+
+#sidebar {
+  width: 25%;
+  float: right;
+}
+
+/* clear fix */
+.group::before, .group::after {
+  content: "";
+  display: table;
+}
+
+.group::after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+
+#newsletter label {
+  display: block;
+}
+
+.banner-ad {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+blockquote {
+  position: relative;
 }
