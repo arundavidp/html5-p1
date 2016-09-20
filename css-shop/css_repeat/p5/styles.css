@@ -3,8 +3,124 @@
 body {
   background-color: #f5f5f5;
   background-image: url("../../images/bg-body.jpg");
+  font-size: 62.5%;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+header, #main, footer {
+  font-size: 1.6em;
 }
 
 h1, h2, h3, h4 {
   font-weight: bold;
+}
+
+#main {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-color: #ccc;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 3px 8px 0 #ccc;
+}
+
+.button {
+  background-color: hotpink;
+  color: white;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+blockquote p {
+  font-style: italic;
+}
+
+aside > h3 {
+  font-weight: bold;
+}
+
+p + .offer {
+  color: red;
+}
+
+input[type="text"], input[type="email"] {
+  border: none;
+  box-shadow: -3px 3px 2px 0 #ccc inset;
+}
+
+input[type="submit"][class="button"] {
+  font-size: 1em;
+}
+
+input[type="submit"][class="button"]:hover {
+  background-color: #d4326d;
+}
+
+a:link {
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:active {
+  color: red;
+}
+
+a:focus {
+  outline-color: black;
+  outline-style: dotted;
+  outline-width: 1px;
+}
+
+#content p:first-of-type::first-letter {
+  font-weight: bold;
+  font-size: 4em;
+}
+
+blockquote p:before {
+  content: "\201C";
+}
+
+blockquote p:after {
+  content: "\201D";
+}
+
+#newsletter {
+  color: white;
+  background-color: #00ACDF;
+  border-radius: 8px;
+  border: rgba(0, 0, 0, 0.1) solid 5px;
+}
+
+footer {
+  background-color: #ccc;
+  background-image: url("../../images/bg-footer.jpg");
+  border-top: #999 dotted 4px;
+  border-image-source: url("../../images/bdr-footer.png");
+  border-image-slice: 4;
+  border-image-repeat: repeat;
+}
+
+.showcase .button:hover {
+  background-color: #00ACDF;
+}
+
+#content {
+  width: 65%;
+}
+
+header nav > ul {
+  border-radius: 20px;
+  border: #ccc solid 1px;
+}
+
+.showcase {
+  box-shadow: 0 -3px 8px 0 #ccc;
 }
