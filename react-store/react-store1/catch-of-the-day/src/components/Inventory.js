@@ -9,7 +9,8 @@ class Inventory extends React.Component {
   }
   handleChange(e, key) {
     const fish = this.props.fishes[key];
-    
+    const updatedFish = {...fish, [e.target.name]: e.target.value}
+    this.props.updateFish(key, updatedFish);
   }
   renderInventory(key) {
     const fish = this.props.fishes[key];
@@ -24,6 +25,7 @@ class Inventory extends React.Component {
         <textarea type="text" name="desc" value={fish.desc} placeholder="Fish Desc" onChange={(e) => this.handleChange(e, key)}>
         </textarea>
         <input type="text" name="image" value={fish.image} placeholder="Fish Image" onChange={(e) => this.handleChange(e, key)} />
+        <button onClick={() => this.props.removeFish(key)}>Remove Fish</button>
       </div>
     )
   }
