@@ -1,0 +1,51 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'search',
+1 verbose cli   'webpack' ]
+2 info using npm@3.10.3
+3 info using node@v6.7.0
+4 silly mapToRegistry name -/all
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry https://registry.npmjs.org/
+7 silly mapToRegistry data Result {
+7 silly mapToRegistry   raw: '-/all',
+7 silly mapToRegistry   scope: null,
+7 silly mapToRegistry   escapedName: null,
+7 silly mapToRegistry   name: null,
+7 silly mapToRegistry   rawSpec: '-/all',
+7 silly mapToRegistry   spec: '-/all',
+7 silly mapToRegistry   type: 'local' }
+8 silly mapToRegistry uri https://registry.npmjs.org/-/all
+9 info updateIndex C:\Users\Arun\AppData\Roaming\npm-cache\registry.npmjs.org\-\all\.cache.json
+10 verbose correctMkdir C:\Users\Arun\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+11 warn Building the local index for the first time, please be patient
+12 silly update-index fetching https://registry.npmjs.org/-/all
+13 verbose request uri https://registry.npmjs.org/-/all
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 10:36:10 PM
+16 verbose request id 0b9e988c75392930
+17 http request GET https://registry.npmjs.org/-/all
+18 info retry will retry, error on last attempt: Error: read ECONNRESET
+19 info attempt registry request try #2 at 11:31:00 PM
+20 http request GET https://registry.npmjs.org/-/all
+21 info retry will retry, error on last attempt: Error: getaddrinfo ENOENT registry.npmjs.org:443
+22 info attempt registry request try #3 at 11:32:00 PM
+23 http request GET https://registry.npmjs.org/-/all
+24 verbose stack Error: getaddrinfo ENOENT registry.npmjs.org:443
+24 verbose stack     at Object.exports._errnoException (util.js:1036:11)
+24 verbose stack     at errnoException (dns.js:33:15)
+24 verbose stack     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)
+25 verbose cwd C:\Users\Arun\github\html5-p1\react-store\react-store2
+26 error Windows_NT 10.0.10586
+27 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "search" "webpack"
+28 error node v6.7.0
+29 error npm  v3.10.3
+30 error code ENOENT
+31 error errno ENOENT
+32 error syscall getaddrinfo
+33 error enoent getaddrinfo ENOENT registry.npmjs.org:443
+34 error enoent getaddrinfo ENOENT registry.npmjs.org:443
+34 error enoent This is most likely not a problem with npm itself
+34 error enoent and is related to npm not being able to find a file.
+35 verbose exit [ 1, true ]
